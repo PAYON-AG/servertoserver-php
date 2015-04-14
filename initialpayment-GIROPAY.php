@@ -1,5 +1,5 @@
 <?php 
-function initialPayments() {
+function initialPayment() {
 	$url = "https://test.oppwa.com/v1/payments";
 	$data = "authentication.userId=8a8294184b4f2868014b4f86f767015d" .
 		"&authentication.password=F8T7N4PD" .
@@ -26,6 +26,6 @@ function initialPayments() {
 	curl_close($ch);
 	return $responseData;
 }
-$responseData = initialPayments();
+$responseData = initialPayment();
 echo $responseData;
 ?>
